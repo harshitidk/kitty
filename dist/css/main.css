@@ -3,6 +3,29 @@ body {
   margin: 0;
   padding: 0;
   background-color: #83FF00;
+  font-family: "Inter", sans-serif;
+}
+
+.list-item {
+  padding: 0px 20px;
+  text-align: center;
+  font-weight: 400;
+  margin: 10px 15px;
+}
+
+.fas {
+  font-size: 22px;
+  color: black;
+  -webkit-transition: color 0.4s ease-in-out, -webkit-transform 0.3s ease;
+  transition: color 0.4s ease-in-out, -webkit-transform 0.3s ease;
+  transition: color 0.4s ease-in-out, transform 0.3s ease;
+  transition: color 0.4s ease-in-out, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.fas:hover {
+  color: #7C00FF;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .container {
@@ -18,10 +41,70 @@ body {
 }
 
 .container1 {
+  position: relative;
+  z-index: 1;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: #7C00FF;
+  background-color: #83FF00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container1-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 50px;
+}
+
+.container1-nav-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container1-nav-options-3 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.container1-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  bottom: -100px;
+}
+
+.container1-bottom .kitty {
+  position: absolute;
+  bottom: -350px;
 }
 
 .container2 {
@@ -29,5 +112,7 @@ body {
       -ms-flex: 1;
           flex: 1;
   background-color: #0c0c0c;
+  z-index: 2;
+  background-color: white;
 }
 /*# sourceMappingURL=main.css.map */
