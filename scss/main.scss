@@ -24,7 +24,7 @@ body
 
     &:hover
     {
-        color: $color2;
+        color: white;
         transform: scale(1.1);
     }
 }
@@ -62,7 +62,7 @@ body
                 {
                     font-size: 24px;
                     font-weight: 700;
-                    letter-spacing: -1px;
+                    letter-spacing: 2px;
                 }
             }
         }
@@ -89,6 +89,78 @@ body
         background-color: $color3;
         z-index: 2;
         background-color: white;
+        display: flex;
+        flex-direction: column;
+
+        &-top
+        {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: top;
+
+            &-cat
+            {
+                font-style: italic;
+                padding: 40px 0px 10px;
+                color: $color4;
+            }
+
+            &-kitty
+            {
+                font-size: 28px;
+                font-weight: bold;
+                color: $color5;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            &-button
+            {
+                padding: 10px 25px;
+                background-color: black;
+                color: white;
+                border-radius: 24px;
+                margin: 15px 0px;
+                transition: background-color 0.5s ease-in-out; 
+                transition: transform 0.3s ease-in-out;
+
+                &:hover 
+                {
+                    background-color: $color1;
+                    color: black;
+                    border: solid 1px grey;
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        &-bottom
+        {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: top;
+
+            &-describe1
+            {
+                width: 650px;
+                text-align: center;
+                color: rgb(58, 58, 58);
+                border-bottom: solid 2px rgb(233, 233, 233);
+                border-top: solid 2px rgb(233, 233, 233);
+                padding: 20px 40px;
+            }
+
+            &-describe2
+            {
+                padding: 20px 0px;
+                font-style: italic;
+                font-weight: 600;
+            }
+        }
     }
 }
 
