@@ -1,0 +1,28 @@
+@import 'style';
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: $color1;
+}
+
+.container
+{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0;
+
+    &1
+    {
+        flex: 1;
+        background-color: $color2;
+    }
+
+    &2
+    {
+        flex: 1;
+        background-color: $color3;
+    }
+}
